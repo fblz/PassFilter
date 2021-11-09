@@ -1,0 +1,2 @@
+#define PASSFILTER_API __declspec(dllexport)
+#define PASSFILTER_API __declspec(dllimport)
