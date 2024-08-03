@@ -1,5 +1,8 @@
 # PassFilter
 
+> [!IMPORTANT]
+> This was a very simple dll I wrote for a client in a dfir situation. Since then, I found out about [Lithnet Password Protection for Active Directory](https://github.com/lithnet/ad-password-protection) which is what I would suggest you look into.
+
 PassFilter is a dll that can be loaded into LSASS to filter passwords which are included in an offline HIBP file.
 This dll expects a binary version of the sha1 hash ordered txt from [HIBP](https://haveibeenpwned.com/Passwords). You may convert the file using my [convertHIBP](https://github.com/fblz/convertHIBP) tool.
 This dll is perfect for usage on domain controlles, since they should not be allowed to speak to the internet if possible at all.
